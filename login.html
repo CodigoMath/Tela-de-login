@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="img-fundo">
+        <img src="img/img-fundo.jpg" alt="img-fundo">
+    </div>
+    <div class="login">
+        <div class="texto-login">
+            <h1>Seja bem-vindo!</h1>
+            <h2>Por favor, insira seus dados.</h2>
+        </div>
+        <div class="inputs">
+        <button id="btnGoogle" class="btnGoogle"><img src="img/icon-google.png" alt="icone-google">Continue com google</button>
+        
+        <div class="form-group">
+            <input type="text" name="email" id="email" required>
+            <span>Email</span>
+        </div>
+
+        <div class="form-group">
+            <input type="password" name="senha" id="senha" required>
+            <span>Senha</span>
+        </div>
+
+        </div>
+        <div class="opcoes">
+            <div class="check">
+                <input type="checkbox" name="checked" id="checked">
+                <label for="checked">Lembrar usuário</label>
+            </div>
+            <a href="recuperar.html">Esqueceu sua senha?</a>
+        </div>
+        <div class="input-login">
+            <a href="obrigado.html"><input type="button" value="Entrar"></a>
+            <p>Não possui uma conta? <a href="registrar.html"><strong>Criar conta</strong></a></p>
+        </div>
+    </div>
+    
+
+    <script src="login.js"></script>
+</body>
+</html>

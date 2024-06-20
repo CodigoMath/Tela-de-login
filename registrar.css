@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 188px;
+    
+}
+
+.img-fundo {
+    margin-left: 104px;
+}
+
+.login {
+    background-color: #f8f8f9;
+    width: 960px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3px;
+}
+
+.login h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #999;
+    margin-bottom: 32px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    border: 0 none;
+    outline: 0;
+}
+
+#email, #nome {
+    margin-bottom: 32px;
+}
+
+.inputs input {
+    width: 377px;
+    height: 48px;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.inputs span {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #999;
+    font-size: 16px;
+}
+
+.inputs input:focus ~ span,
+.inputs input:valid ~ span {
+    transform: translateY(-32px);
+}
+
+.opcoes {
+    display: flex;
+    gap: 72px;
+    margin-top: 12px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.opcoes a {
+    text-decoration: none;
+    color: #999;
+}
+
+.opcoes a:hover {
+    color: #808080;
+}
+
+.input-login {
+    width: 377px;
+}
+
+.input-login input {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.input-login a {
+    text-decoration: none;
+    color: black;
+}
+
+.input-login a:hover {
+    color: #505050;
+}
+
+@media screen and (max-width: 1345px) {
+    body {
+        padding: 16px;
+        width: 100%;
+    }
+    
+    .img-fundo {
+        display: none;
+    }
+
+    .login {
+        max-width: 500px;
+        height: 600px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login {
+        max-width: 400px;
+    }
+
+    .texto-login h1 {
+        font-size: 40px;
+    }
+
+    .texto-login h2 {
+        font-size: 20px;
+    }
+
+    #btnGoogle {
+        width: 308px;
+    }
+
+    /* .opcoes {
+        gap: 6px;
+    } */
+
+    .opcoes {
+        width: 100%;
+        justify-content: end;
+        margin-right: 70px;
+    }
+
+    .check {
+        display: none;
+    }
+
+    .input-login{
+        max-width: 308px;
+    }
+
+    .inputs input {
+        width: 100%;
+    }
+
+
+}

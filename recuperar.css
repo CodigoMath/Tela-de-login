@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    background-color: #f8f8f9;
+    width: 523px;
+    height: 700px;
+    text-align: center;
+    padding-top: 122px;
+    /* justify-content: center;
+    display: flex;
+    flex-direction: column; */
+}
+
+.texto-login h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.texto-login h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.inputs input {
+    width: 405px;
+    height: 48px;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.inputs span {
+    position: absolute;
+    left: 58px;
+    top: 14px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #999;
+    font-size: 16px;
+}
+
+.inputs input:focus ~ span,
+.inputs input:valid ~ span {
+    transform: translateY(-32px);
+}
+
+.input-login {
+    width: 100%;
+}
+
+.input-login input {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    width: 405px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    appearance: none; 
+}
+
+
+@media screen and (max-width: 1345px) {
+    body {
+        padding: 16px;
+        width: 100%;
+    }
+    
+    .img-fundo {
+        display: none;
+    }
+
+    .login {
+        max-width: 500px;
+        height: 600px;
+        border-radius: 8px;
+    }
+
+    .texto-login h1 {
+        font-size: 40px;
+    }
+
+    .texto-login h2 {
+        font-size: 20px;
+    }
+
+    .inputs span {
+        left: 46px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login {
+        max-width: 400px;
+    }
+
+    .texto-login h1 {
+        font-size: 32px;
+    }
+
+    .texto-login h2 {
+        font-size: 16px;
+    }
+
+    .input-login input {
+        width: 330px;
+    }
+
+    .inputs input {
+        width: 330px;
+    }
+
+    .input-login input {
+        width: 336px;
+    }
+
+    .inputs span {
+        left: 26px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .login {
+        max-width: 360px;
+    }
+    
+    .inputs span {
+        left: 6px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .login {
+        max-width: 340px;
+    }
+}
